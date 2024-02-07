@@ -17,6 +17,14 @@ void Perro::ladrar() {
     std::cout << "Guau Guau" << std::endl;
 }
 
+Perro:: Perro(string name, int age, string raza, string color, string size){
+    nombre = name;
+    edad = age;
+    this->raza = raza;
+    this->color = color;
+    tamanio = size;
+}
+
 void Perro::agregarPropietario(std::string nombre, std::string docIdentidad) {
     // Asocia a la variable de instancia pPropietario un nuevo pPropietario
     // Es memoria dinámica, en el destructor se debe liberar

@@ -8,6 +8,8 @@
 #include <iostream>
 #include "Propietario.h"
 
+using namespace std;
+
 class Perro {
 private:
     int edad;
@@ -19,6 +21,7 @@ private:
 
 public:
     Perro();
+    Perro(string name, int age, string raza, string color, string size);
     ~Perro(); //Destructor
     void ladrar();
     Propietario * getPropietario();
