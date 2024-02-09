@@ -4,9 +4,15 @@
 
 int main() {
 
+    // Instanciar
+
     Perro* Baloo = new Perro("Baloo",3,"Yorki","Negro","Pequenio");
     Baloo -> ladrar();
-    // Instanciar
+
+    Propietario* Amparo = new Propietario("Amparo");
+    Amparo->setDocIdentidad("9620092465");
+    Amparo->setEdad(75);
+    
     Perro firulais;
     firulais.setNombre("Firulais");
     firulais.setColor("Negro");
