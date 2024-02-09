@@ -8,11 +8,14 @@ int main() {
 
     Perro* Baloo = new Perro("Baloo",3,"Yorki","Negro","Pequenio");
     Baloo -> ladrar();
+    Baloo->agregarPropietario("Juliana", "1109184984");
+    cout << Baloo->getPropietario()->getDocIdentidad()<<endl;
 
     Propietario* Amparo = new Propietario("Amparo");
     Amparo->setDocIdentidad("9620092465");
     Amparo->setEdad(75);
-    
+    Amparo->mostrarInfo();
+
     Perro firulais;
     firulais.setNombre("Firulais");
     firulais.setColor("Negro");
