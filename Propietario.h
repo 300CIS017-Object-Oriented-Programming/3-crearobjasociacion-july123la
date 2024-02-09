@@ -6,6 +6,7 @@
 #define PROPIETARIO_H
 
 #include <string>
+using namespace std;
 
 class Propietario {
 private:
@@ -13,6 +14,7 @@ private:
     std::string docIdentidad;
     int edad;
 public:
+    Propietario(string nombre);
     Propietario() = default; //Agrega constructor por defecto sin cuerpo
     Propietario(std::string nombre, std::string docIdentidad);
     void mostrarInfo();
