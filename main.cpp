@@ -4,6 +4,8 @@
 
 int main() {
 
+    Perro* Baloo = new Perro("Baloo",3,"Yorki","Negro","Pequenio");
+    Baloo -> ladrar();
     // Instanciar
     Perro firulais;
     firulais.setNombre("Firulais");
