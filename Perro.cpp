@@ -13,6 +13,10 @@ Perro::Perro() {
     this->color = "";
 }
 
+void Perro::agregarVeterinario( string nombre, int years){
+    pVeterinario = new Veterinario(nombre, years);
+}
+
 void Perro::ladrar() {
     std::cout << "Guau Guau" << std::endl;
 }
@@ -34,6 +38,11 @@ void Perro::agregarPropietario(std::string nombre, std::string docIdentidad) {
 void Perro::setPropietario(Propietario *pPropietario) {
     this->pPropietario = pPropietario;
 }
+
+Veterinario *Perro:: getVeterinario(){
+    return pVeterinario;
+}
+
 Propietario *Perro::getPropietario() {
     return this->pPropietario;
 }

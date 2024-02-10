@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Perro.h"
 #include "Propietario.h"
+#include "Veterinario.h"
 
 int main() {
 
@@ -10,6 +11,8 @@ int main() {
     Baloo -> ladrar();
     Baloo->agregarPropietario("Juliana", "1109184984");
     cout << Baloo->getPropietario()->getDocIdentidad()<<endl;
+    Baloo->agregarVeterinario("Sandra",15);
+    cout<<Baloo->getVeterinario()->getNombre()<<endl;
 
     Propietario* Amparo = new Propietario("Amparo");
     Amparo->setDocIdentidad("9620092465");
