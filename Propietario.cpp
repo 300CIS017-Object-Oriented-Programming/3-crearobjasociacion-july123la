@@ -21,6 +21,10 @@ string Propietario:: mostrarInfo(){
     return ans;
 }
 
+int Propietario:: getEdad(){
+    return edad;
+}
+
 string Propietario:: getDocIdentidad(){
     return docIdentidad;
 }

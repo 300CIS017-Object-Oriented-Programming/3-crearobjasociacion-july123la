@@ -24,13 +24,11 @@ public:
 
     string mostrarInfo();
     std::string getNombre();
+    int getEdad();
     string getDocIdentidad();
     void setDocIdentidad(string doc);
     void setEdad(int edad);
     void setNombre(std::string nombre);
-
-
-
 };
 
 
