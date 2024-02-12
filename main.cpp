@@ -2,10 +2,14 @@
 #include "Perro.h"
 #include "Propietario.h"
 #include "Veterinario.h"
+#include "Raza.h"
+
 
 int main() {
 
     // Instanciar
+    Raza* Napolitano = new Raza("Mastin Napolitano", "Italia");
+    Raza* Maltes = new Raza("Maltes", "Italia");
 
     Perro* Baloo = new Perro("Baloo",3,"Yorki","Negro","Pequenio");
     Baloo -> ladrar();
@@ -25,6 +29,8 @@ int main() {
     firulais.setEdad(5);
     firulais.setTamanio("Grande");
     firulais.setRaza("Mastin napolitano");
+    firulais.setcRaza(Napolitano);
+    cout<<firulais.getcRaza()->getNombre()<<", "<<firulais.getcRaza()->getPaisOrigen()<<endl;
 
     //Agregar un nuevo pPropietario a Firulais
     firulais.agregarPropietario("Carlos Zapata", "102842313");

@@ -8,6 +8,7 @@
 #include <iostream>
 #include "Propietario.h"
 #include "Veterinario.h"
+#include "Raza.h"
 
 using namespace std;
 
@@ -20,6 +21,7 @@ private:
     std::string color;
     Propietario* pPropietario;
     Veterinario* pVeterinario;
+    Raza* pRaza;
 
 public:
     Perro();
@@ -28,6 +30,8 @@ public:
     void ladrar();
     Propietario * getPropietario();
     Veterinario * getVeterinario();
+    Raza * getcRaza();
+    
 
     // Sirve para.......
     void agregarPropietario(std::string nombre, std::string docIdentidad);
@@ -35,7 +39,7 @@ public:
 
     // Sirve para relacionar dos clases cuando ya se tiene un objeto
     void setPropietario(Propietario * pPropietario);
-
+    void setcRaza(Raza*);
 
     int getEdad();
     void setEdad(int edad);
