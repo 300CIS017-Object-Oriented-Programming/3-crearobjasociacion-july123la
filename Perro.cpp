@@ -13,8 +13,24 @@ Perro::Perro() {
     this->color = "";
 }
 
+void Perro::agregarVeterinario( string nombre, int years){
+    pVeterinario = new Veterinario(nombre, years);
+}
+
 void Perro::ladrar() {
     std::cout << "Guau Guau" << std::endl;
+}
+
+Raza* Perro:: getcRaza(){
+    return pRaza;
+}
+
+Perro:: Perro(string name, int age, string raza, string color, string size){
+    nombre = name;
+    edad = age;
+    this->raza = raza;
+    this->color = color;
+    tamanio = size;
 }
 
 void Perro::agregarPropietario(std::string nombre, std::string docIdentidad) {
@@ -26,6 +42,15 @@ void Perro::agregarPropietario(std::string nombre, std::string docIdentidad) {
 void Perro::setPropietario(Propietario *pPropietario) {
     this->pPropietario = pPropietario;
 }
+
+void Perro:: setcRaza(Raza* raza){
+    pRaza = raza;
+}
+
+Veterinario *Perro:: getVeterinario(){
+    return pVeterinario;
+}
+
 Propietario *Perro::getPropietario() {
     return this->pPropietario;
 }
